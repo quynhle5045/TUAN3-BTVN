@@ -1,0 +1,28 @@
+*{ box-sizing:border-box; 
+}
+#wrapper{ 
+    position:relative; 
+    width:300px; 
+    margin:50px auto 20px; 
+    border:3px solid #000; 
+    padding:8px;
+    display:grid; 
+    grid-template-columns:50px 1fr; 
+    grid-template-rows:45px 260px 35px;
+    gap:8px; 
+    font-size:18px; 
+    box-shadow:-12px 12px 12px #999; 
+}
+#wrapper::before{ 
+    content:"wrapper"; 
+    position:absolute; 
+    top:-30px; left:0; 
+    font-size:18px; 
+}
+#wrapper > *{ 
+    border:2px solid #000; 
+    padding:4px; 
+}
+header, footer{ 
+    grid-column:1 / 3; 
+}
