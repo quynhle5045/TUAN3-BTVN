@@ -1,1 +1,156 @@
-Bài tập về nhà tuần 4
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Labs – Phát triển ứng dụng TMĐT</title>
+  <meta name="description" content="Trang tổng hợp 03 bài thực hành JavaScript: Language Foundations, DOM and Events, jQuery.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Về đầu trang">
+      <span class="brand-mark">Q</span>
+      <span class="brand-text">JavaScript Labs</span>
+    </a>
+
+    <nav id="site-nav" class="site-nav" aria-label="Điều hướng chính">
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#labs">Các bài Lab</a>
+      <a href="#da-hoc">Đã học được</a>
+      <a href="#tu-danh-gia">Tự đánh giá</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Chuyển giao diện sáng/tối">
+        <span aria-hidden="true">◐</span>
+      </button>
+      <button id="menu-toggle" class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Mở menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ====================== HERO + 3.1 THÔNG TIN CÁ NHÂN + 3.2 GIỚI THIỆU ====================== -->
+  <section id="top" class="hero">
+    <div class="wrap hero-grid" style="grid-template-columns: minmax(0, 1fr)">
+
+      <div class="hero-text" id="gioi-thieu">
+        <div class="profile">
+          <div>
+            <h1>LÊ DIỄM QUỲNH</h1>
+            <p class="course">Bài thực hành Chương 4 – JavaScript<br>Học phần Phát triển ứng dụng TMĐT, UEH</p>
+          </div>
+        </div>
+
+        <dl class="facts">
+          <div>
+            <dt>Mã số sinh viên</dt>
+            <dd>31241025045</dd>
+          </div>
+          <div>
+            <dt>Lớp học phần</dt>
+            <dd>26C1INF50902701</dd>
+          </div>
+          <div>
+            <dt>GitHub cá nhân</dt>
+            <dd><a href="https://github.com/quynhle5045/TUAN3-BTVN/tree/main/JavaScript-Labs" target="_blank" rel="noopener">GitHub cá nhân (điền tên tài khoản)</a></dd>
+          </div>
+        </dl>
+        <p class="intro">Qua ba bài Lab, mình muốn hiểu JavaScript từ nền tảng ngôn ngữ đến cách tương tác với trang web và xử lý dữ liệu. JavaScript giúp website phản hồi thao tác người dùng, kiểm tra dữ liệu biểu mẫu, cập nhật nội dung mà không cần tải lại trang và kết nối tới nguồn dữ liệu. Đây là những kỹ năng cần thiết để tạo trải nghiệm mua sắm trực tuyến thuận tiện.</p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#labs">Xem các bài Lab</a>
+          <a class="btn btn-ghost" href="#da-hoc">Kiến thức đã học</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================== 3.3 DANH SÁCH VÀ LIÊN KẾT CÁC BÀI LAB ====================== -->
+  <section id="labs" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Các bài Lab</h2>
+      <p class="section-lead">Mỗi Lab có một thư mục riêng trong <code>JavaScript-Labs/</code>. Bấm nút để mở trang của từng Lab.</p>
+
+      <div style="overflow-x:auto;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:1.5rem">
+        <table style="width:100%;border-collapse:collapse;text-align:left">
+          <thead><tr style="background:var(--teal);color:var(--on-teal)"><th style="padding:1rem">Bài Lab</th><th style="padding:1rem">Nội dung</th><th style="padding:1rem">Yêu cầu / liên kết</th></tr></thead>
+          <tbody>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--line)"><strong>Lab 08</strong></td><td style="padding:1rem;border-bottom:1px solid var(--line)">JavaScript 1: Language Foundations — biến, kiểu dữ liệu, hàm, String, Date, Array và Object.</td><td style="padding:1rem;border-bottom:1px solid var(--line)"><a href="JavaScript%201%20Language%20Foundations/ch08-lab-start-master/exercise.html">Mở trang bài Lab 08 ↗</a></td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--line)"><strong>Lab 09</strong></td><td style="padding:1rem;border-bottom:1px solid var(--line)">JavaScript 2: DOM and Events — lựa chọn phần tử, thay đổi nội dung, sự kiện và Form.</td><td style="padding:1rem;border-bottom:1px solid var(--line)"><a href="JavaScript%202%20DOM%20and%20Events/ch09-lab-start-master/lab09-walkthrough01.html">Mở bài thực hành Lab 09 ↗</a></td></tr>
+            <tr><td style="padding:1rem"><strong>Lab 10</strong></td><td style="padding:1rem">JavaScript 3: jQuery — selectors, sự kiện, thao tác DOM, hiệu ứng và GET request.</td><td style="padding:1rem"><a href="JavaScript%203%20jQuery/ch10-lab-start-master/lab10-walkthrough01.html">Mở bài thực hành Lab 10 ↗</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================== 3.4 KIẾN THỨC VÀ KỸ NĂNG ĐÃ HỌC ====================== -->
+  <section id="da-hoc" class="section section-alt">
+    <div class="wrap">
+      <h2 class="section-title">Những gì mình đã học được</h2>
+      <p class="section-lead">Mỗi Lab gắn với một tình huống thường gặp trên website thương mại điện tử.</p>
+
+      <div class="learned">
+
+        <div class="learned-row">
+          <h3>Lab 08<span>Language Foundations</span></h3>
+          <div>
+            <p>Mình đã làm quen với những bước đi nền tảng nhất để đưa JavaScript vào trang HTML. Mình biết cách sử dụng Browser Console để gỡ lỗi, nắm vững cách khai báo biến, các kiểu dữ liệu, cấu trúc điều kiện và vòng lặp. Bên cạnh đó, việc thực hành với các đối tượng quen thuộc như chuỗi (String), ngày tháng (Date), mảng (Array), đối tượng (Object) cùng với việc tự xây dựng các hàm (Functions) đã giúp mình tư duy logic tốt hơn trong lập trình.</p>
+          </div>
+        </div>
+
+        <div class="learned-row">
+          <h3>Lab 09<span>DOM and Events</span></h3>
+          <div>
+            <p>Mình đã thành thạo việc sử dụng các phương thức truy xuất DOM để đọc và thay đổi nội dung, thuộc tính hay kiểu hiển thị của các phần tử HTML. Không chỉ dừng lại ở đó, việc biết cách tạo, chèn, xóa phần tử động và bắt các sự kiện người dùng như click, mouseover, kết hợp với việc xử lý và kiểm tra dữ liệu form (Form Validation) đã giúp mình hiểu rõ cách tạo ra một trang web có tính tương tác cao.</p>
+          </div>
+        </div>
+
+        <div class="learned-row">
+          <h3>Lab 10<span>jQuery</span></h3>
+          <div>
+            <p>Mình đã biết cách sử dụng các bộ chọn (Selectors) linh hoạt, tạo ra các hiệu ứng chuyển động mượt mà như fadeIn, fadeOut, slideToggle hay các hoạt ảnh phức tạp với .animate(). Đặc biệt, việc thực hiện các yêu cầu GET asynchronous để lấy dữ liệu JSON từ các dịch vụ web bên ngoài và xử lý phản hồi chuyên nghiệp bằng đối tượng jqXHR (.done(), .fail(), .always()) là một kỹ năng cực kỳ giá trị, giúp mình sẵn sàng áp dụng vào việc xây dựng các tính năng thực tế cho website thương mại điện tử sau này.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 3.5 TỰ ĐÁNH GIÁ ====================== -->
+  <section id="tu-danh-gia" class="section">
+    <div class="wrap narrow">
+      <h2 class="section-title">Tự đánh giá sau khi hoàn thành</h2>
+
+      <p id="review-text" class="review">Sau ba bài Lab, mình hiểu rõ hơn cách JavaScript nối dữ liệu với giao diện: từ biến, hàm và mảng đến thao tác DOM, xử lý sự kiện và gửi yêu cầu GET bằng jQuery. Lab 09 hữu ích nhất với mình vì có thể thấy trang phản hồi ngay theo thao tác, dù việc chọn đúng phần tử và cập nhật trạng thái đòi hỏi sự cẩn thận. Những kỹ thuật này có thể dùng để kiểm tra biểu mẫu đăng ký, cập nhật số lượng và tổng tiền giỏ hàng, thay đổi thông tin sản phẩm hoặc tạo hiệu ứng tương tác cho website thương mại điện tử. Mình cũng nhận ra cần kiểm tra dữ liệu đầu vào và thông báo lỗi rõ ràng để giao diện dễ sử dụng. Sau môn học, mình muốn luyện thêm cách tổ chức mã dễ bảo trì, xử lý lỗi khi tải dữ liệu bất đồng bộ và kiểm tra giao diện trên nhiều kích thước màn hình.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>Bài thực hành JavaScript – Học phần Phát triển ứng dụng TMĐT, UEH.</p>
+    <p>© <span id="year"></p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
